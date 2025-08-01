@@ -1,0 +1,204 @@
+﻿@{
+    ViewData["Title"] = "David Mwangi • Portfolio";
+}
+
+<body>
+    <div id="top"></div>
+    <div class="section" id="introduction">
+        <div id="bg-div"></div>
+        <div id="intro-content">
+            <div id="intro-left" class="animate-scroll intro-half">
+                <div id="headshot-content">
+                    <div id="headshots">
+                        <picture>
+                            <source srcset="images/profile.jpg" type="image/webp">
+                            <img id="headshot-bw" class="headshot" src="/images/profile.jpg" alt="black and white headshot of David" width="512" />
+                        </picture>
+                        <picture>
+                            <source srcset="images/profile.jpg" type="image/webp">
+                            <img id="headshot-color" class="headshot crop" src="/images/profile.jpg" alt="color headshot of David" width="512" />
+                        </picture>
+                    </div>
+                </div>
+                <div id="social-buttons">
+                    <a id="in-btn" class="btn btn-primary social" target="_blank" href="https://linkedin.com/in/david-mwangi-3a0566302"><img class="social-img" src="/images/in-icon.png" alt="linkedin icon" width="64" /></a>
+                    <a id="git-btn" class="btn btn-primary social" target="_blank" href="https://github.com/davidmuchiri2025"><img class="social-img" src="images/git-icon.png" alt="github icon" width="64" /></a>
+                </div>
+            </div>
+            <div id="intro-right" class="animate-scroll intro-half">
+                <div id="title-text">
+                    <h1 id="intro-title"><b>Hello,</b><br />I'm David Mwangi</h1>
+                    <p id="intro-tagline">A motivated Backend Developer currently working at Equity Bank.</p>
+                </div>
+                <div id="intro-buttons">
+                    <a id="resume-btn" class="btn btn-primary intro" target="_blank" href="https://drive.google.com/file/d/1iTNecEw_biB55B5E4gPr3mje5FGm-C7o/view?usp=sharing">RESUME</a>
+                    <a id="meeting-btn" class="btn btn-primary intro" target="_blank" href="https://outlook.office.com/bookwithme/user/f43b54d140814960a06bc16f31a1879c@equitybank.co.ke?anonymous">SCHEDULE A MEETING</a>
+                </div>
+            </div>
+        </div>
+        <a class="btn-arrow" href=#about-anchor id="about-me-button">About Me<br />∨</a>
+    </div>
+    <div id="about-anchor"></div>
+    <article class="section" id="about-me">
+        <div id="about-content">
+            <h1 class="animate-scroll" id="about-header"><strong>About Me</strong></h1>
+            <p class="animate-scroll" id="about-me-paragraph">
+                I’m David Mwangi, currently a backend developer at Equity Bank Kenya product house department.
+                I am an analytical problem solver and skilled engineer.<br /><br />
+                Interested in full-stack development and artificial intelligence and motivated by tangible innovation,
+                my unique educational background is one of my greatest strengths as a software engineer. In
+                addition to my strong technical skills in c#, sql. my current position has allowed me to
+                develop my leadership, teamwork, communication, and people management skills.<br /><br />
+                With this background, I am confident in my ability to serve as a valuable team player in a
+                software engineering role, and I plan to leverage my combination of people and technical skills in the
+                future as an engineering manager or architect.
+            </p>
+        </div>
+        <a class="btn-arrow" href=#edu-exp id="credentials-button">My Credentials<br />∨</a>
+        <img id="top-left-line" src="/images/top-left-line.png" alt="top corner art yellow" />
+        <img id="bottom-right-line" src="/images/bottom-right-line.png" alt="bottom corner art yellow"/>
+    </article>
+    <section class="section" id="edu-exp">
+        <div id="edu-exp-title">
+            <h2>Education & Experiences</h2>
+            <button id="edu-exp-expand" class="btn-arrow expand" data-bs-toggle="collapse" data-bs-target="#edu-exp-info">Expand<br />∨</button>
+        </div>
+    </section>
+    <div id="collapse-container">
+        <div class="collapse" id="edu-exp-info">
+            <div id="edu-exp-box">
+                <div id="edu-exp-content">
+                    <h3>Education</h3>
+                    <div class="edu-exp-div box-shadow animate-scroll">
+                        <picture>
+                            <source srcset="images/rongo.jpg" type="image/webp">
+                            <img class="edu-exp-img" src="images/rongo.jpg" height="256" width="256" loading="lazy">
+                        </picture>
+                        <div info>
+                            <h5 class="date">Class of 2023</h5>
+                            <h4 class="header">Rongo University </h4>
+                            <h6 class="subheader">Bsc In Informatics</h6>
+                            <p class="details">Relevant Coursework:</p>
+                            <ul class="details">
+                                <li>Analysis of Algorithms</li>
+                                <li>Data Structures and Functional Programming</li>
+                                <li>Discrete Structures</li>
+                                <li>Data Structures and Object Oriented Programming</li>
+                                <li>Business Statistics</li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                    <h3>Work Experience</h3>
+                    <div class="edu-exp-div box-shadow animate-scroll">
+                        <picture>
+                            <source srcset="images/intern.jpg" type="image/webp">
+                            <img class="edu-exp-img" src="images/pricefm-logo.png" height="256" width="256" loading="lazy">
+                        </picture>
+                        <div info>
+                            <h5 class="date">Jan 2024 - Oct. 2024</h5>
+                            <h4 class="header">Software developer</h4>
+                            <h6 class="subheader">Ruiru, Nairobi-Kenya</h6>
+                            <p class="details">
+                                <ul class="details">
+                                    <li>
+                                        Ensure user satisfaction and retention by providing responsive tech support.
+
+                                    </li>
+                                    <li>
+                                        Build and maintain software documentation sites using .net programming language.
+
+                                    </li>
+                                    <li>
+                                        Increase productivity by using software to organize, track bug patches and add feature requests.
+
+                                    </li>
+                                    <li>
+                                        Collaborate with other developers to update the website and create new features.
+
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Current employment</h3>
+                    <div class="edu-exp-div box-shadow animate-scroll">
+                        <img class="edu-exp-img" src="images/equitylogo.webp" height="256" width="256" loading="lazy">
+                        <div info>
+                            <h5 class="date"> Oct 2024 - Present</h5>
+                            <h4 class="header">Equity bank Kenya</h4>
+                            <h6 class="subheader">Software developer .Net</h6>
+                            <p class="details">
+                                <ul class="details">
+                                    <li>
+                                         Designed, built, and maintained efficient RESTful APIs in C#.
+
+                                    </li>
+                                    <li>
+                                        Built reusable code and libraries for future use.
+
+
+                                    </li>
+                                     Ensured the backend supports business goals through effective strategy, planning, and execution.
+
+
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img id="top-right-line" src="/images/top-right-line.png" loading="lazy"/>
+                <img id="bottom-left-line" src="/images/bottom-left-line.png" loading="lazy"/>
+            </div>
+        </div>
+    </div>
+    <section class="section" id="proj-skill">
+        <div id="proj-skill-title">
+            <h2>Projects & Skills</h2>
+            <button id="skill-expand-button" class="btn-arrow expand" data-bs-toggle="collapse" data-bs-target="#proj-skill-info">Expand<br />∨</button>
+        </div>
+    </section>
+    <div id="proj-skill-container">
+        <div class="collapse" id="proj-skill-info">
+            <div class="outside-container">
+                <div id="projects">
+                    <div class="project animate-scroll" id="ebaker">
+                        <div class="text">
+                            <h5 class="text date">August 2023</h5>
+                            <h4 class="text header">ebaker.us</h4>
+                            <h6 class="text subheader">HTML | CSS | JavaScript | C# | ASP.NET | Bootstrap | MVC | Photoshop </h6>
+                            <p>
+                                Created a personal portfolio website using the ASP.NET Core MVC
+                                framework with a focus on responsive web design and performance. Features
+                                include dark mode toggling, a responsive background and headshot based on mouse
+                                position, scroll animations, and hover highlighting.
+                            </p>
+                        </div>
+                        <div id="button-div">
+                            <a class="git-btn" target="_blank" href="https://github.com/davidmuchiri2025">View on Github</a>
+                        </div>
+                    </div>
+                                       
+                </div>
+            </div>
+            <div class="outside-container" id="skill-container">
+                <h3 class="proj-title">Technical Skills</h3>
+                <div id="skills">
+                    
+                   
+                    <img class="skill-icon" id="ocaml" src="images/ocaml-icon.png" />
+                    <img class="skill-icon" id="csharp" src="images/csharp-icon.png" />
+                    <img class="skill-icon" id="javascript" src="images/js-icon.png" />
+                    <img class="skill-icon" id="html5" src="images/html-icon.png" />
+                    <img class="skill-icon" id="css3" src="images/css-icon.png" />
+                    <img class="skill-icon" id="json" src="images/json-icon.png" />
+                    <img class="skill-icon" id="dotnet" src="images/net-icon.png" />
+                    <img class="skill-icon" id="bootstrap" src="images/bootstrap-icon.png" />
+                     <img class="skill-icon" id="numpy" src="images/numpy-icon.png" />
+                    <img class="skill-icon" id="selenium" src="images/selenium-icon.png" />
+                    <img class="skill-icon" id="photoshop" src="images/photoshop-icon.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
