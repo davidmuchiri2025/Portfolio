@@ -1,10 +1,10 @@
 steps:
   - name: 'mcr.microsoft.com/dotnet/sdk:7.0'
     entrypoint: 'dotnet'
-    args: ['publish', '-c', 'Release', '-o', 'published']
+    args: ['publish', '-c', 'Release', '-o', 'output']
 
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'cp', '-r', 'published/wwwroot/*', 'gs://portfolio-project-dev']
+    args: ['-m', 'cp', '-r', 'output/wwwroot/*', 'gs://portfolio-project-dev']
 
 options:
   default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
