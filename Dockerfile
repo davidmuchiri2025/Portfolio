@@ -3,7 +3,7 @@
 # Base image for runtime
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
-EXPOSE 80
+EXPOSE 8080
 EXPOSE 443
 
 # Build stage
