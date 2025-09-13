@@ -4,7 +4,7 @@ steps:
     args: ['publish', '-c', 'Release', '-o', 'published']
 
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'cp', '-r', 'published/wwwroot/*', 'gs://portfolio-dev']
+    args: ['-m', 'cp', '-r', 'published/wwwroot/*', 'gs://portfolio-project-dev']
 
 options:
   default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
