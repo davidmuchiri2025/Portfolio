@@ -4,6 +4,9 @@ steps:
     args: ['publish', '-c', 'Release', '-o', 'published']
 
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'cp', '-r', 'published/wwwroot/*', 'gs://YOUR_BUCKET_NAME']
+    args: ['-m', 'cp', '-r', 'published/wwwroot/*', 'gs://portfolio-dev']
+
+options:
+  default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
 
 timeout: 900s
