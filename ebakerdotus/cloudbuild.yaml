@@ -1,0 +1,9 @@
+steps:
+  - name: 'mcr.microsoft.com/dotnet/sdk:7.0'
+    entrypoint: 'dotnet'
+    args: ['publish', '-c', 'Release', '-o', 'published']
+
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', '-r', 'published/wwwroot/*', 'gs://YOUR_BUCKET_NAME']
+
+timeout: 900s
